@@ -2102,3 +2102,139 @@ java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-t
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 51643 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1058233578\testng-customsuite.xml
 java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 51643 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1058233578\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:35:27.899
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:35:27.975
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51997 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-137034677\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 51997 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-137034677\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:41:20.605
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:41:20.707
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52049 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--772626094\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52049 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--772626094\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:42:49.104
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:42:49.188
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52080 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1036417262\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52080 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1036417262\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:43:31.599
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:43:31.689
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52105 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1963223081\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52105 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1963223081\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:49:08.500
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:49:08.587
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52155 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--2108431591\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52155 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--2108431591\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:50:06.970
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 14:50:07.075
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52192 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-129560815\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52192 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-129560815\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 15:18:47.210
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 15:18:47.302
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52575 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1685184341\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52575 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1685184341\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 15:20:06.233
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 15:20:06.300
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52729 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1073975904\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52729 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1073975904\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 15:25:27.912
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-21 15:25:27.992
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52798 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--20272905\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52798 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--20272905\testng-customsuite.xml
