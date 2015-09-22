@@ -2539,3 +2539,859 @@ java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-t
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 53758 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-105492459\testng-customsuite.xml
 java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 53758 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-105492459\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.ui 4 2 2015-09-22 13:31:26.887
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.refactoring.TestNGVisitor.visit(TestNGVisitor.java:49)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:611)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:470)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:212)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.init(TestNGQuickAssistProcessor.java:65)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.getAssists(TestNGQuickAssistProcessor.java:81)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:403)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:329)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:509)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:287)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:200)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:192)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaSelectAnnotationRulerAction.runWithEvent(JavaSelectAnnotationRulerAction.java:98)
+	at org.eclipse.ui.texteditor.AbstractRulerActionDelegate.runWithEvent(AbstractRulerActionDelegate.java:112)
+	at org.eclipse.ui.internal.handlers.ActionDelegateHandlerProxy.execute(ActionDelegateHandlerProxy.java:291)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.ui.actions.ContributedAction.runWithEvent(ContributedAction.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.triggerAction(AbstractTextEditor.java:3082)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.access$1(AbstractTextEditor.java:3065)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$15.run(AbstractTextEditor.java:3096)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4281)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3368)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.jdt.ui 4 4 2015-09-22 13:31:26.981
+!MESSAGE An error occurred while computing quick assists. Check log for details.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 0 2015-09-22 13:31:26.981
+!MESSAGE Exception while processing quick fixes or quick assists
+!SUBENTRY 2 org.eclipse.jdt.ui 4 4 2015-09-22 13:31:26.981
+!MESSAGE Exception while processing quick fixes or quick assists
+!STACK 0
+java.lang.NullPointerException
+	at org.testng.eclipse.refactoring.TestNGVisitor.visit(TestNGVisitor.java:49)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:611)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:470)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:2782)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:212)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2711)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.init(TestNGQuickAssistProcessor.java:65)
+	at org.testng.eclipse.refactoring.TestNGQuickAssistProcessor.getAssists(TestNGQuickAssistProcessor.java:81)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:403)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:339)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:329)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:509)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:287)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:242)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:75)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:128)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:200)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:192)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaSelectAnnotationRulerAction.runWithEvent(JavaSelectAnnotationRulerAction.java:98)
+	at org.eclipse.ui.texteditor.AbstractRulerActionDelegate.runWithEvent(AbstractRulerActionDelegate.java:112)
+	at org.eclipse.ui.internal.handlers.ActionDelegateHandlerProxy.execute(ActionDelegateHandlerProxy.java:291)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.ui.actions.ContributedAction.runWithEvent(ContributedAction.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.triggerAction(AbstractTextEditor.java:3082)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$14.access$1(AbstractTextEditor.java:3065)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$15.run(AbstractTextEditor.java:3096)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4281)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3368)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 13:47:23.499
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 13:47:23.569
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54751 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1749325699\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54751 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1749325699\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 14:06:27.495
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55214 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--667759314\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55214 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--667759314\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 14:36:47.927
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55991 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1613652188\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55991 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1613652188\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 14:43:57.567
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56659 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1023835413\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56659 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1023835413\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 14:45:24.163
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56711 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1713607038\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56711 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1713607038\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 14:48:44.518
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56786 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1002453677\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56786 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1002453677\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 14:54:30.623
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56905 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1462904521\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56905 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1462904521\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:03:31.014
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57258 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--502042049\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 57258 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--502042049\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:05:30.466
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57296 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-946501454\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 57296 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-946501454\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:09:52.410
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57366 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1137715631\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 57366 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1137715631\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:12:34.602
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57447 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-700258869\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 57447 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-700258869\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:28:47.159
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57965 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1313853749\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 57965 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1313853749\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:31:00.781
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58137 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1067959770\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 58137 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1067959770\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:33:45.764
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58336 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2053385463\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 58336 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2053385463\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:38:07.338
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testGroupCreationWithValidData(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:38:07.472
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58512 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-145768124\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 58512 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-145768124\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:39:21.609
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58770 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-143915543\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 58770 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-143915543\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:40:07.277
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59032 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--923515823\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59032 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--923515823\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:41:28.829
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testGroupCreationWithValidData(GroupData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:41:29.115
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59165 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-849730560\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59165 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-849730560\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:42:56.652
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59232 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-586667937\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59232 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-586667937\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:47:19.011
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:47:19.129
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59317 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--227493028\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59317 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--227493028\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:51:50.948
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59506 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1740727421\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59506 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1740727421\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:55:51.367
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:55:51.501
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59701 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1694756767\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59701 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1694756767\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:57:16.621
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59717 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--302841992\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59717 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--302841992\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 15:58:27.865
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59839 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--224045088\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59839 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--224045088\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:00:56.989
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60037 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2127337686\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 60037 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2127337686\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:05:12.581
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60313 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--58083684\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 60313 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--58083684\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:09:00.608
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60502 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1509553545\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 60502 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1509553545\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:09:37.006
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60698 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1732158441\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 60698 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1732158441\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:11:20.479
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60898 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-440704132\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 60898 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-440704132\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:13:46.367
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61096 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1689208856\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 61096 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1689208856\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:16:40.320
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61307 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1557502139\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 61307 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1557502139\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:17:56.603
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:17:56.760
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61521 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1203396316\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 61521 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1203396316\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:18:35.269
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:18:35.409
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61560 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--274166426\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 61560 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--274166426\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:18:55.418
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:18:55.612
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61728 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-308590240\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 61728 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-308590240\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:24:25.876
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61908 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1667604348\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 61908 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1667604348\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:31:16.309
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62156 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1970833575\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62156 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1970833575\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:35:57.254
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62209 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1224422353\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62209 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1224422353\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:39:55.450
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62308 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--989018968\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62308 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--989018968\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:49:01.610
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62436 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--215095173\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62436 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--215095173\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:53:50.325
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62547 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1861023572\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62547 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1861023572\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:54:49.764
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62642 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1020624705\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62642 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1020624705\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 16:59:05.297
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62774 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1066777604\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62774 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1066777604\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 17:02:24.760
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62874 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-187301271\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 62874 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-187301271\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 17:04:37.610
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63052 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--206095995\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 63052 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--206095995\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 17:05:50.298
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63095 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-794174524\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 63095 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-794174524\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:11:53.975
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:11:54.088
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63780 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2105619295\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 63780 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2105619295\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:16:30.612
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:16:30.710
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63872 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2133507274\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 63872 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-2133507274\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:17:39.199
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:17:39.299
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63947 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--725284323\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 63947 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--725284323\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:21:14.359
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64053 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-817264318\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64053 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-817264318\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:22:35.600
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:22:35.700
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64130 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1661542967\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64130 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1661542967\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:22:53.885
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64203 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1669582362\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64203 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1669582362\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:26:02.572
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64360 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-42225147\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64360 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-42225147\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:26:16.890
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:ContactModificationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class ContactModificationTests
+    void modifySomeContact(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:26:16.964
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64531 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--760361059\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64531 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--760361059\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:28:11.327
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64640 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-70497351\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64640 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-70497351\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:29:03.161
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactRemovalTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import java.util.Random
+  import org.testng.annotations.Test
+  class ContactRemovalTests
+    void deleteSomeContact()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:29:03.249
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64812 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-356224578\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64812 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-356224578\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:32:40.952
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64855 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1965610797\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64855 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1965610797\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:33:24.395
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64895 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1480801991\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64895 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1480801991\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:38:48.463
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64977 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1166635\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64977 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1166635\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:39:09.188
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65015 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1561344621\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65015 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1561344621\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:39:56.797
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:39:56.884
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65059 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--267889568\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65059 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--267889568\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:40:21.039
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:40:21.119
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65089 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--915776067\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65089 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--915776067\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:40:32.264
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65258 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1348972681\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65258 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1348972681\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:43:25.600
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65341 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--719109727\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65341 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--719109727\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:44:24.902
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.AssertJUnit.assertEquals
+  import java.util.Collections
+  import java.util.List
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testContactCreationWithValidData(ContactData)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:44:25.012
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65400 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1627224401\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65400 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1627224401\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:44:40.734
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49187 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-802880301\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 49187 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-802880301\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:44:51.587
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49226 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1709145268\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 49226 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse--1709145268\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-22 18:45:28.250
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49266 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1211761112\testng-customsuite.xml
+java -ea -classpath C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\bin:C:\Users\elena.yakimova\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 49266 -d C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\test-output C:\Users\ELENA~1.YAK\AppData\Local\Temp\testng-eclipse-1211761112\testng-customsuite.xml

@@ -20,3 +20,4 @@
 1442843842623	Extract local variable 'group'
 1442844594578	Delete element
 1442844754209	Rename method 'testValidGroupCreation'
+1442920071364	Rename method 'testNonEmptyContactCreation'
