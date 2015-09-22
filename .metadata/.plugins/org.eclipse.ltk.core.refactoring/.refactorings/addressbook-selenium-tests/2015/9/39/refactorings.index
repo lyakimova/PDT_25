@@ -17,3 +17,6 @@
 1442827550873	Rename type 'NewRemovalTests'
 1442829166142	Extract method 'selectGroupByIndex'
 1442830218276	Delete element
+1442843842623	Extract local variable 'group'
+1442844594578	Delete element
+1442844754209	Rename method 'testValidGroupCreation'
