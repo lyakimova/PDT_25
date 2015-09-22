@@ -77,10 +77,10 @@ public class TestBase {
 	public Iterator<Object[]> randomValidsGroupGenerator() {
 		List<Object[]> list = new ArrayList<Object[]>();
 		for (int i=0; i<5; i++) {
-			GroupData group = new GroupData();
-			group.name = generateRandomString();	
-			group.header = generateRandomString();
-			group.footer = generateRandomString();
+			GroupData group = new GroupData()
+				.withName(generateRandomString())
+				.withHeader(generateRandomString())
+				.withFooter(generateRandomString());
 			list.add(new Object[]{group});
 		}
 		return list.iterator();

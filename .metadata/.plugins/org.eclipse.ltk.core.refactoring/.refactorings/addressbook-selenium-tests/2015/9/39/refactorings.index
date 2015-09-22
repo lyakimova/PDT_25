@@ -21,3 +21,9 @@
 1442844594578	Delete element
 1442844754209	Rename method 'testValidGroupCreation'
 1442920071364	Rename method 'testNonEmptyContactCreation'
+1442951547918	Inline local variable 'group'
+1442951993997	Extract local variable 'groupHelper'
+1442955102601	Rename local variable 'hasGroupSelector'
+1442955924052	Rename method 'getNavigationHelper'
+1442956041725	Rename method 'openMainPage'
+1442956059403	Rename method 'gotoGroupsPage'

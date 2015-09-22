@@ -1,7 +1,5 @@
 package com.example.fw;
 
-import static org.junit.Assert.fail;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -28,7 +26,7 @@ public class ApplicationManager {
 	    driver.quit();
 	}
 
-	public NavigationHelper getNavigationHelper(){
+	public NavigationHelper navigateTo(){
 		if (navigationHelper == null){
 		    navigationHelper = new NavigationHelper(this);			
 		}

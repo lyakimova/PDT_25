@@ -8,4 +8,5 @@
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="com.example.fw.ApplicationManager"/>
 <fullyQualifiedTypeName name="org.apache.bcel.generic.IFNULL"/>
+<fullyQualifiedTypeName name="com.example.fw.ContactHelper"/>
 </qualifiedTypeNameHistroy>
