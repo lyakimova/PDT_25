@@ -2,6 +2,9 @@
 .metadata/
 .recommenders/
 RemoteSystemsTempFiles/
+_.metadata/
+_.recommenders/
+_RemoteSystemsTempFiles/
 */test-output/
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
