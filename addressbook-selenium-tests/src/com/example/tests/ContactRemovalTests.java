@@ -10,9 +10,7 @@ import org.testng.annotations.Test;
 public class ContactRemovalTests extends TestBase {
 
 	@Test
-	public void deleteSomeContact(){
-		app.navigateTo().mainPage();
-	    
+	public void deleteSomeContact(){   
 		// save old state
 	    List<ContactData> oldList = app.getContactHelper().getContacts();
 	    

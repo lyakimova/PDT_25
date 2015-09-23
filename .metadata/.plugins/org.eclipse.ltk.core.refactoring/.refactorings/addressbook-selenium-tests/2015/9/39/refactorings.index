@@ -27,3 +27,6 @@
 1442955924052	Rename method 'getNavigationHelper'
 1442956041725	Rename method 'openMainPage'
 1442956059403	Rename method 'gotoGroupsPage'
+1443006259252	Extract method 'submitGroupRemoval'
+1443006297523	Rename method 'submitGroupRemoval'
+1443009237479	Delete element

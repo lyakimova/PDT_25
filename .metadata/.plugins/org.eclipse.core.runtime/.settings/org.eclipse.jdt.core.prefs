@@ -9,4 +9,4 @@ org.eclipse.jdt.core.compiler.compliance=1.8
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
 org.eclipse.jdt.core.compiler.source=1.8
-org.eclipse.jdt.core.userLibrary.Selenium=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/Users/applePK/Documents/gitHub/PDT_25/selenium-server-standalone-2.47.1.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.Selenium=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/Users/elena.yakimova/GitHub/PDT_25/selenium-server-standalone-2.47.1.jar"/>\r\n</userlibrary>\r\n

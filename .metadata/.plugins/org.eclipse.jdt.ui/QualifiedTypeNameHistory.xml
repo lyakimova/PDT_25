@@ -9,4 +9,6 @@
 <fullyQualifiedTypeName name="com.example.fw.ApplicationManager"/>
 <fullyQualifiedTypeName name="org.apache.bcel.generic.IFNULL"/>
 <fullyQualifiedTypeName name="com.example.fw.ContactHelper"/>
+<fullyQualifiedTypeName name="com.example.utils.ListOf"/>
+<fullyQualifiedTypeName name="com.example.utils.SortedListOf"/>
 </qualifiedTypeNameHistroy>

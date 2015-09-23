@@ -22,7 +22,7 @@ public class ContactCreationTests extends TestBase{
 	// actions
     app.getContactHelper().gotoNewContact();
  	app.getContactHelper().fillContactForm(contact, CREATION);
-    app.getCommonHelper().submitCreation();
+    app.getContactHelper().submitContactCreation();
     app.getContactHelper().returnToHomePage();
     
     // save new state
