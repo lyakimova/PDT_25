@@ -70,38 +70,16 @@ public class ContactHelper extends HelperBase {
 		
 	}
 	
-/*	public List<ContactData> getContacts() {
+	public List<ContactData> getContacts() {
 		List<ContactData> contacts = new ArrayList<ContactData>();
-		List<WebElement> rows = driver.findElements(By.xpath("//tr[@name='entry']/td[3]"));
+		List<WebElement> rows = driver.findElements(By.xpath("//tr[@name='entry']"));
 		for (WebElement row : rows) {
 			ContactData contact = new ContactData();
-			contact.firstname = row.getText();
+			contact.firstname = (row.findElement(By.xpath(".//td[3]"))).getText();
+			contact.lastname = (row.findElement(By.xpath(".//td[2]"))).getText();	
 		contacts.add(contact);
 		}
 		return contacts;
-	}*/
-	
-	List<WebElement> rows = getContactRows();
-	for (WebElement row : rows) {
-		ContactData contact = new ContactData();
-			contact.firstname = (row.findElement(By.xpath("//tr[@name='entry']/td[3]"))).getText();
-			contact.lastname = (row.findElement(By.xpath("//tr[@name='entry']/td[2]"))).getText();		
-		list.add(contact);
-		}
-	
-	public List<WebElement> getContactRows() {
-		// TODO Auto-generated method stub
-		return null;
 	}
-		return contacts;
-	}
-	
-	
-	/*List<WebElement> rows = getContactRows();
-	for (WebElement row : rows) {
-	    ContactObject contact = new ContactObject()
-	        .setFirstName(row.findElement(By.xpath(".//td[2]")).getText())
-	        .setLastName(row.findElement(By.xpath(".//td[3]")).getText());
-	    list.add(contact);
-	}*/
+
 }
