@@ -1,21 +1,77 @@
 package com.example.tests;
 
 public class ContactData implements Comparable<ContactData>{
-	public String phone2;
-	public String address2;
-	public String group;
-	public String year;
-	public String month;
-	public String date;
-	public String email2;
-	public String email1;
-	public String work;
-	public String mobile;
-	public String home;
-	public String address;
-	public String lastname;
-	public String firstname;
+	private String phone2;
+	private String address2;
+	private String group;
+	private String year;
+	private String month;
+	private String date;
+	private String email2;
+	private String email1;
+	private String work;
+	private String mobile;
+	private String home;
+	private String address;
+	private String lastname;
+	private String firstname;
 	
+	public String getPhone2() {
+		return phone2;
+	}
+
+	public String getAddress2() {
+		return address2;
+	}
+
+	public String getGroup() {
+		return group;
+	}
+
+	public String getYear() {
+		return year;
+	}
+
+	public String getMonth() {
+		return month;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public String getEmail2() {
+		return email2;
+	}
+
+	public String getEmail1() {
+		return email1;
+	}
+
+	public String getWork() {
+		return work;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public String getHome() {
+		return home;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
 	public ContactData(){
 	}
 
@@ -76,6 +132,83 @@ public class ContactData implements Comparable<ContactData>{
 	@Override
 	public int compareTo(ContactData other) {
 		return this.firstname.toLowerCase().compareTo(other.firstname.toLowerCase());
+	}
+
+	public ContactData withFirstname(String firstname) {
+		this.firstname = firstname;
+		return this;
+	}
+
+	public ContactData withLastname(String lastname) {
+		this.lastname = lastname;
+		return this;
+	}
+	
+
+	public ContactData withAddress(String address) {
+		this.address = address;
+		return this;
+	}
+	
+
+	public ContactData withHome(String home) {
+		this.home = home;
+		return this;
+	}
+	
+
+	public ContactData withMobile(String mobile) {
+		this.mobile = mobile;
+		return this;
+	}
+	
+
+	public ContactData withWork(String work) {
+		this.work = work;
+		return this;
+	}
+	
+
+	public ContactData withEmail1(String email1) {
+		this.email1 = email1;
+		return this;
+	}
+	
+
+	public ContactData withEmail2(String email2) {
+		this.email2 = email2;
+		return this;
+	}
+	
+
+	public ContactData withDate(String date) {
+		this.date = date;
+		return this;
+	}
+
+	public ContactData withMonth(String month) {
+		this.month = month;
+		return this;
+	}
+	
+	public ContactData withYear(String year) {
+		this.year = year;
+		return this;
+	}
+	
+	public ContactData withGroup(String group) {
+		this.group = group;
+		return this;
+	}
+	
+	public ContactData withAddress2(String address2) {
+		this.address2 = address2;
+		return this;
+	}
+	
+	public ContactData withPhone2(String phone2) {
+		this.phone2 = phone2;
+		return this;
 	}
 	
 }

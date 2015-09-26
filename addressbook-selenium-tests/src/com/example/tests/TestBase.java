@@ -91,21 +91,21 @@ public class TestBase {
 	public Iterator<Object[]> randomValidsContactGenerator() {
 		List<Object[]> list = new ArrayList<Object[]>();
 		for (int i=0; i<2; i++) {
-			ContactData contact = new ContactData();
-		    contact.firstname=generateRandomString();
-		    contact.lastname=generateRandomString();
-		    contact.address=generateRandomString();
-		    contact.home=generateRandomString();
-		    contact.mobile=generateRandomString();
-		    contact.work=generateRandomString();
-		    contact.email1=generateRandomString();
-		    contact.email2=generateRandomString();
-		    contact.date=getRandomDate();
-		    contact.month=getRandomMonth();
-		    contact.year=generateRandomYear();
-		   // contact.group="group 1";
-		    contact.address2=generateRandomString();
-		    contact.phone2=generateRandomString();
+			ContactData contact = new ContactData()
+					.withFirstname(generateRandomString())
+					.withLastname(generateRandomString())
+					.withAddress(generateRandomString())
+					.withHome(generateRandomString())
+					.withMobile(generateRandomString())
+					.withWork(generateRandomString())
+					.withEmail1(generateRandomString())
+					.withEmail2(generateRandomString())
+					.withDate(getRandomDate())
+					.withMonth(getRandomMonth())
+					.withYear(generateRandomYear())
+					//.withGroup("group 1")
+					.withAddress2(generateRandomString())
+					.withPhone2(generateRandomString());
 			list.add(new Object[]{contact});
 		}
 		return list.iterator();
