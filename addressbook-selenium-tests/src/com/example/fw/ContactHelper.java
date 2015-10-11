@@ -28,13 +28,16 @@ public class ContactHelper extends HelperBase {
 	
 	public void rebuildCache() {
 		cachedContacts = new SortedListOf<ContactData>();
-		
 		manager.navigateTo().mainPage();
 		List<WebElement> rows = driver.findElements(By.xpath("//tr[@name='entry']"));
 		for (WebElement row : rows) {
 			String firstname = (row.findElement(By.xpath(".//td[3]"))).getText();
-			String lastname = (row.findElement(By.xpath(".//td[2]"))).getText();	
-			cachedContacts.add(new ContactData().withFirstname(firstname).withLastname(lastname));
+			String lastname = (row.findElement(By.xpath(".//td[2]"))).getText();
+			String home = (row.findElement(By.xpath(".//td[5]"))).getText();
+			cachedContacts.add(new ContactData()
+					.withFirstname(firstname)
+					.withLastname(lastname)
+					.withHome(home));
 		}
 	}
 	
@@ -71,7 +74,7 @@ public class ContactHelper extends HelperBase {
 
 	public ContactHelper openContact(int index) {
 		manager.navigateTo().mainPage();
-		click(By.xpath("//tr[" + (index+1) + "]//img[@title='Edit']"));
+		click(By.xpath("//tr[@name='entry'][" + (index+1) + "]//img[@title='Edit']"));
 	    return this;
 	}
 	
@@ -107,11 +110,13 @@ public class ContactHelper extends HelperBase {
 	
 	public ContactHelper submitContactModification() {
 		click(By.xpath("//input[@value='Update']"));
+		cachedContacts = null;
 	    return this;
 	}
 
 	public ContactHelper submitContactDeletion() {
 		click(By.xpath("//input[@value='Delete']"));
+		cachedContacts = null;
 	    return this;
 	}
 

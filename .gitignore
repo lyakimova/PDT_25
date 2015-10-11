@@ -4,6 +4,7 @@
 RemoteSystemsTempFiles/
 */test-output/
 */_test-output/
+xstream-distribution-1.4.8-bin/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
