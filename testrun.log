@@ -1,0 +1,35 @@
+[TestNG] Running:
+  C:\Users\elena.yakimova\GitHub\PDT_25\addressbook-selenium-tests\testng-customsuite.xml
+
+PASSED: testGroupCreationWithValidData(GroupData [name=test-1994563524, header=test-729650310, footer=test-2097580929])
+PASSED: testGroupCreationWithValidData(GroupData [name=, header=, footer=])
+PASSED: testGroupCreationWithValidData(GroupData [name=test1899957875, header=test1477447166, footer=test-945829292])
+
+===============================================
+    Group test
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+PASSED: testContactCreationWithValidData(ContactData [phone2=test1647230261, address2=test974605417, group=null, year=8880, month=December, date=8, email2=, email1=test-354232123, work=, mobile=test1926959877, home=, address=, lastname=test-793252896, firstname=test-575277860])
+PASSED: testContactCreationWithValidData(ContactData [phone2=test-1536750918, address2=, group=null, year=, month=March, date=-, email2=test26216515, email1=test586687311, work=, mobile=test-1333267221, home=test1976828095, address=test-1948571575, lastname=, firstname=])
+PASSED: testContactCreationWithValidData(ContactData [phone2=, address2=test529740106, group=null, year=9334, month=August, date=7, email2=, email1=test-821274642, work=test1104129332, mobile=test1261280144, home=test-1267943053, address=test-344761723, lastname=test1954274986, firstname=test1886849012])
+PASSED: testContactCreationWithValidData(ContactData [phone2=test-1612280464, address2=test-1933289444, group=null, year=7520, month=August, date=11, email2=test-1267203741, email1=, work=test-1499709579, mobile=test2081849281, home=, address=test808972641, lastname=test595686356, firstname=test264277024])
+PASSED: testContactCreationWithValidData(ContactData [phone2=test-1457229546, address2=test-1361533606, group=null, year=8120, month=September, date=4, email2=, email1=test551258460, work=test-892872387, mobile=test699875218, home=test531262479, address=test-1758926072, lastname=, firstname=test1652231916])
+
+===============================================
+    Contact test
+    Tests run: 5, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 8, Failures: 0, Skips: 0
+===============================================
+
+[TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@73c6c3b2: 28 ms
+[TestNG] Time taken by org.testng.reporters.JUnitReportReporter@ea30797: 7 ms
+[TestNG] Time taken by org.testng.reporters.XMLReporter@3b764bce: 10 ms
+[TestNG] Time taken by org.testng.reporters.jq.Main@3b95a09c: 48 ms
+[TestNG] Time taken by org.testng.reporters.EmailableReporter2@6bf2d08e: 6 ms
+[TestNG] Time taken by [FailedReporter passed=0 failed=0 skipped=0]: 1 ms

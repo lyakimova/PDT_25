@@ -6,13 +6,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
-import java.util.Random;
-
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-
 import com.example.fw.ApplicationManager;
 import static com.example.tests.GroupDataGenerator.generateRandomGroups;
 import static com.example.tests.ContactDataGenerator.generateRandomContacts;
